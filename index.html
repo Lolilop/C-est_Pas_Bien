@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+
+	<title>C'est pas bien</title>
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+
+	<script src="js/modernizr-custom.js"></script>
+</head>
+
+<body id="debut">
+
+
+
+	<div class="container">
+		<header class="bp-header cf">
+			<div class="dummy-logo">
+				<div class="dummy-icon foodicon foodicon--coconut"></div>
+					<h2 class="dummy-heading">C'est pas bien</h2>
+					<div class="recherhce">
+						<input id="cherche" type="text" placeholder="Search.." name="search">
+						<div class="control-group">
+							<div class="controls">
+								<button onclick="recherche()">Submit</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<button class="action action--open" aria-label="Open Menu"><span class="icon icon--menu"></span></button>
+				<nav id="ml-menu" class="menu">
+					<button class="action action--close" aria-label="Close Menu"><span class="icon icon--cross"></span></button>
+						<div class="menu__wrap">
+							<ul data-menu="main" class="menu__level" tabindex="-1" role="menu" aria-label="All">
+								<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1" aria-owns="submenu-1" href="#">Films</a></li>
+								<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-2" aria-owns="submenu-2" href="#">Series</a></li>
+								<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3" aria-owns="submenu-3" href="#">Animes</a></li>
+							</ul>
+
+							<ul data-menu="submenu-1" id="submenu-1" class="menu__level" tabindex="-1" role="menu" aria-label="Film">
+								<li class="menu__item" role="menuitem"><a class="menu__link" href="#" onclick="filtra('action')">Action</a></li>
+								<li class="menu__item" role="menuitem"><a class="menu__link" href="#" onclick="filtra('animation')">Animation</a></li>
+								<li class="menu__item" role="menuitem"><a class="menu__link" href="#" onclick="filtra('aventure')">Aventure</a></li>
+								<li class="menu__item" role="menuitem"><a class="menu__link" href="#" onclick="filtra('epouvante')">Epouvante</a></li>
+								<li class="menu__item" role="menuitem"><a class="menu__link" href="#" onclick="filtra('historique')">Historique</a></li>
+								<li class="menu__item" role="menuitem"><a class="menu__link" href="#" onclick="filtra('science-fiction')">Science-Fiction</a></li>
+								<li class="menu__item" role="animation" style="color: white"></li>
+							</ul>
+
+							<ul data-menu="submenu-2" id="submenu-2" class="menu__level" tabindex="-1" role="menu" aria-label="Series">
+								<li class="menu__item" role="menuitem"><a class="menu__link" href="#" onclick="filtra('series_vf')">Series VF</a></li>
+								<li class="menu__item" role="menuitem"><a class="menu__link" href="#" onclick="filtra('series_vf')">Series VOSTFR</a></li>
+								<li class="menu__item" role="menuitem"><a class="menu__link" href="#" onclick="filtra('series_vf')">Series VO</a></li>
+							</ul>
+
+							<ul data-menu="submenu-3" id="submenu-3" class="menu__level" tabindex="-1" role="menu" aria-label="Animes">
+								<li class="menu__item" role="menuitem"><a class="menu__link" href="#" onclick="filtra('manga')">Animes VF</a></li>
+								<li class="menu__item" role="menuitem"><a class="menu__link" href="#" onclick="filtra('manga')">Animes VOSTFR</a></li>
+								<li class="menu__item" role="menuitem"><a class="menu__link" href="#" onclick="filtra('manga')">Animes VO</a></li>
+								<li class="menu__item" role="menuitem"><a class="menu__link" href="#" onclick="filtra('manga_film')">Films Mangas</a></li>
+							</ul>
+						</div>
+					</nav>
+
+				<div class="content">
+					<p class="info"></p>
+					<ul class="products" id="forme"> </ul>
+				</div>
+			</div>
+
+	<script src="js/classie.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript" src="./js/algo/search.js"></script>
+	<script type="text/javascript" src="./js/algo/tableau.js"></script>
+	<script type="text/javascript" src="./js/algo/affichage.js"></script>
+	<script type="text/javascript" src="./js/mon_menu.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>

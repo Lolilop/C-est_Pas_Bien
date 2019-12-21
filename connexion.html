@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Import Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Import CSS -->
+  <link rel="stylesheet" href="./css/connexion/connexion.css">
+
+  <title>connexion</title>
+
+</head>
+
+<body>
+
+  <header id="header">
+    <div class="image">
+      <img src="logo.png" alt="logo">
+    </div>
+  </header>
+
+  <div id="contain">
+
+    <!-- Formulaire connexion avec demande PHP -->
+
+    <form name="formulaire">
+      <table id="liste">
+
+        <!-- Serveur -->
+
+        <tr>
+          <td>
+            <div class="control-group">
+              <label class="control-label" for="serveur">Serveur</label>
+              <div class="controls">
+                <input id="serveur" name="serveur" type="text" placeholder="Serveur : " class="input-xlarge" required="">
+              </div>
+            </div>
+          </td>
+        </tr>
+
+        <!-- Username -->
+
+        <tr>
+          <td>
+            <div class="control-group">
+              <label class="control-label" for="username">Username</label>
+              <div class="controls">
+                <input id="username" name="username" type="text" placeholder="Username" class="input-xlarge">
+              </div>
+            </div>
+          </td>
+        </tr>
+
+        <!-- Password -->
+
+        <tr>
+          <td>
+            <div class="control-group">
+              <label class="control-label" for="pass">Password</label>
+              <div class="controls">
+                <input id="pass" name="pass" type="password" placeholder="Password" class="input-xlarge">
+              </div>
+            </div>
+          </td>
+        </tr>
+
+        <!-- Submit -->
+
+        <tr>
+          <td>
+            <div class="control-group">
+              <div class="controls">
+                <button id="submit" name="submit" class="btn btn-warning" onclick="co()">Submit</button>
+              </div>
+            </div>
+          </td>
+        </tr>
+
+      </table>
+    </form>
+  </div>
+
+  <script src="./js/connexion/connexion.js"></script>
+</body>
+
+</html>
