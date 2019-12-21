@@ -1,0 +1,24 @@
+body {
+  background-color: #FFF;
+  color: #000;
+}
+
+#header {
+  background-color: grey;
+  color: inherit;
+  margin: -1cm -0.25cm 0cm -0.5cm;
+}
+
+#contain h1, #liste td {
+  text-align: center;
+}
+
+#liste {
+  margin: 0 auto;
+  background-color: inherit;
+  color: #FFF;
+}
+
+.image {
+  margin: 0 60% 0 45%;
+}
